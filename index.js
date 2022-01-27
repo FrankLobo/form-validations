@@ -32,11 +32,11 @@ paymentForm.addEventListener("submit", (event) => {
     allGood = false;
     form.lastname.style.backgroundColor = "#F8D7DA";
   }
-  if (form.city.value === "" || !charactersOnly.test(form.city.value)) {
+  if (form.city.value === "") {
     allGood = false;
     form.city.style.backgroundColor = "#F8D7DA";
   }
-  if (form.state.value === "Pick a state" || !charactersOnly.test(form.state.value)) {
+  if (form.state.value === "") {
     allGood = false;
     form.state.style.backgroundColor = "#F8D7DA";
   }
